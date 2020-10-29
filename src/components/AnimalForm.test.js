@@ -6,7 +6,7 @@ test("renders AnimalForm without errors", ()=>{
     render(<AnimalForm />);
 });
 
-test("User can fill out and submit form", ()=> {
+test("User can fill out and submit form", async ()=> {
     //Arrange: render component
     render(<AnimalForm />);
 
@@ -17,7 +17,7 @@ test("User can fill out and submit form", ()=> {
     const notesInput = screen.getByLabelText(/notes/i);
 
     //2. add text to our fields
-    fireEvent.change(speciesInput, { target:{ value: 'canine', name:'species'}});
+    fireEvent.change(speciesInput, { target:{ value: 'asfsf', name:'species'}});
     fireEvent.change(ageInput, { target:{ value: '6', name:'age'}});
     fireEvent.change(notesInput, { target:{ value: 'cuteness', name:'notes'}});
 
@@ -25,6 +25,6 @@ test("User can fill out and submit form", ()=> {
     const button = screen.getByRole("button", {name:/submit/i});
     fireEvent.click(button);
 
-    const newAnimalText = screen.getByText(/canine/i);
+    const newAnimalText = await screen.getByText(/canine/i);
     expect(newAnimalText).toBeTruthy();
 });
