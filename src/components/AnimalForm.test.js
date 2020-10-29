@@ -12,6 +12,10 @@ test("User can fill out and submit form", ()=> {
 
     //Act:
     //1. get access to form fields
+    const speciesInput = screen;
+    const ageInput = screen;
+    const notesInput = screen;
+
     //2. add text to our fields
     //3. get access to and click our button
 
