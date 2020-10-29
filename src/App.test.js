@@ -8,7 +8,7 @@ test('renders App without errors', () => {
 
 test("renders the app header", ()=> {
   //Arrange: Setting up of our react component
-  const app = render(<App />);
+  render(<App />);
 
   //Act: extracting the part of dom we want to sets. Doing the behavoir
   const header = screen.queryByText(/add new animal/i);
