@@ -11,7 +11,10 @@ test("renders the app header", ()=> {
   const app = render(<App />);
 
   //Act: extracting the part of dom we want to sets. Doing the behavoir
-  const header = screen.getByText();
+  const header = screen.getByText("Add New Animal");
+
+
+
 
   //Assert: testing that that change exists
 });
