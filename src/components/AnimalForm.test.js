@@ -2,6 +2,8 @@ import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import AnimalForm from "./AnimalForm";
 
+import * as validator from 'email-validator';
+
 test("renders AnimalForm without errors", ()=>{
     render(<AnimalForm />);
 });
