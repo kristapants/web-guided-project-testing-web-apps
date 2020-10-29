@@ -4,8 +4,6 @@ import App from "./App";
 
 test('renders App without errors', () => {
   render(<App />);
-
-  throw new Error("this is my error");
 })
 
 test("renders the app header", ()=> {
