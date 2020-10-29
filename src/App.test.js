@@ -7,5 +7,7 @@ test('renders App without errors', () => {
 })
 
 test("renders the app header", ()=> {
-
+  //Arrange: Setting up of our react component
+  //Act: extracting the part of dom we want to sets. Doing the behavoir
+  //Assert: testing that that change exists
 });
