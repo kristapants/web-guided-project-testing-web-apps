@@ -5,3 +5,14 @@ import AnimalForm from "./AnimalForm";
 test("renders AnimalForm without errors", ()=>{
     render(<AnimalForm />);
 });
+
+test("User can fill out and submit form", ()=> {
+    //Arrange: render component
+    render(<AnimalForm />);
+
+    //Act:
+    //1. get access to form fields
+    //2. add text to our fields
+    //3. get access to and click our button
+
+});
