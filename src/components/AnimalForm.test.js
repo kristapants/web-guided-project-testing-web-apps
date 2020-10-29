@@ -22,7 +22,7 @@ test("User can fill out and submit form", ()=> {
     fireEvent.change(notesInput, { target:{ value: 'cuteness', name:'notes'}});
 
     //3. get access to and click our button
-    const button = screen.getByRole("button", {name:/submit/i});
+    const button = screen.getByRole("button");
     fireEvent.click(button);
 
     //Assert Check that text is on screen
