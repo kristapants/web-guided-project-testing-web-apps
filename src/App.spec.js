@@ -2,7 +2,7 @@ import React from "react";
 import { render } from '@testing-library/react';
 
 
-describe("Spec.s js tests", ()=>{
+describe("Spec.js js tests", ()=>{
     test("This is a simple test 1", ()=>{
         
     });
