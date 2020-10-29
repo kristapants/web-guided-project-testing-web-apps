@@ -1,8 +1,6 @@
-This new readme line.
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Scripts HAHAHAHA
 
 In the project directory, you can run:
 
