@@ -6,3 +6,6 @@ test('renders App without errors', () => {
   render(<App />);
 })
 
+test("renders the app header", ()=> {
+
+});
