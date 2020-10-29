@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import AnimalForm from "./AnimalForm";
 
 test("renders AnimalForm without errors", ()=>{
@@ -13,10 +13,11 @@ test("User can fill out and submit form", ()=> {
     //Act:
     //1. get access to form fields
     const speciesInput = screen.getByLabelText(/species/i);
-    const ageInput = screen.getByLabelText(/ages/i);
+    const ageInput = screen.getByLabelText(/age/i);
     const notesInput = screen.getByLabelText(/notes/i);
 
     //2. add text to our fields
+
     //3. get access to and click our button
 
 });
