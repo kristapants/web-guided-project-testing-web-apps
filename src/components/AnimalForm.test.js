@@ -17,7 +17,9 @@ test("User can fill out and submit form", ()=> {
     const notesInput = screen.getByLabelText(/notes/i);
 
     //2. add text to our fields
-    fireEvent.change(speciesInput, { target:{ value: 'canine', }});
+    fireEvent.change(speciesInput, { target:{ value: 'canine', name:'species'}});
+    fireEvent.change(ageInput, { target:{ value: '6', name:'species'}});
+    fireEvent.change(notesInput, { target:{ value: 'cuteness', name:'species'}});
 
     //3. get access to and click our button
 
