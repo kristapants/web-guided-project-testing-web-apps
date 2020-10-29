@@ -25,4 +25,6 @@ test("User can fill out and submit form", ()=> {
     const button = screen.getByRole("button");
     fireEvent.click(button);
 
+    const newAnimalText = screen.findByText(/canine/i);
+    
 });
