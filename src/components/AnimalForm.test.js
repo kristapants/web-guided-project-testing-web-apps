@@ -6,7 +6,7 @@ test("renders AnimalForm without errors", ()=>{
     render(<AnimalForm />);
 });
 
-test("User can fill out and submit form", ()=> {
+test("User can fill out and submit form", async ()=> {
     //Arrange: render component
     render(<AnimalForm />);
 
@@ -26,6 +26,6 @@ test("User can fill out and submit form", ()=> {
     fireEvent.click(button);
 
     //Assert Check that text is on screen
-    const newAnimalText = screen.getByText(/canine/i);
+    const newAnimalText = await screen.getByText(/canine/i);
     expect(newAnimalText).toBeTruthy();
 });
